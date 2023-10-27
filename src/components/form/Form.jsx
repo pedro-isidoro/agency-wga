@@ -65,6 +65,7 @@ function Formulary(){
                     <h3>Solicite a sua proposta</h3>
                     <p>WGA - Marketing Digital</p>
                 </div>
+                {/* Condicional para, se não tiver erros pode enviar o email */}
                 <form onSubmit={handleSubmit((data) => {
                     if (Object.keys(errors).length === 0) {
                         console.log(data);
