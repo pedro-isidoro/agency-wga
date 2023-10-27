@@ -1,4 +1,4 @@
-import './whatsapp.css'
+import './Whatsapp.css'
 
 function WhatsApp(){
     return(
