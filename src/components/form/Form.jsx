@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import emailjs from '@emailjs/browser';
 import './Form.css'
 
 function Formulary(){
@@ -25,7 +26,32 @@ function Formulary(){
     const [company, setCompany] = useState('');
     const [instagram, setInsta] = useState('');
     const [opnion, setOpnion] = useState('');
-    console.log('Nome:', name, 'Email:', email, 'Tel:', telephone, 'Company:', company, 'Insta:', instagram, 'Opnion:', opnion)
+    // console.log('Nome:', name, 'Email:', email, 'Tel:', telephone, 'Company:', company, 'Insta:', instagram, 'Opnion:', opnion)
+
+    function sendEmail(e){
+        e.preventDefault();
+
+        if(name === '' || email === '' || telephone === '' || company === '' ||instagram === '' || opnion === ''){
+            alert('preencha os campos');
+            return;
+        }
+        // Pegando as informações para colocar no templateEmail
+        const templateParams = {
+            from_name: name,
+            company: company,
+            email: email,
+            instagram: instagram,
+            telephone: telephone,
+            message: opnion,
+        }
+        // Para enviar as informações do Form por Email
+        emailjs.send("service_znurchl", "template_ptf31ne", templateParams, "eQp_3RbaJKsV8kOFU")
+        .then((response) => {
+            console.log("Email Enviado", response.status, response.text)
+        }, (err) => {
+            console.log("Erro:", err)
+        })
+    }
 
     return(
         <section className="form flex-column align-items-center justify-content-center" id="form">
@@ -34,7 +60,8 @@ function Formulary(){
                 <h3>Solicite a sua proposta</h3>
                 <p>WGA - Marketing Digital</p>
             </div>
-            <form onSubmit={handleSubmit((data) => {console.log(data)})}>
+            <form onSubmit={sendEmail}>
+                {handleSubmit((data) => {console.log(data)})}
                 <div className="formulary">
                     <div className="item-formulary flex-column">
                         <label htmlFor="username">Nome <span>*</span></label>
