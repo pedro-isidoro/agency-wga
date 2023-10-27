@@ -1,4 +1,4 @@
-import './SkillTitle.css'
+import './skillTitle.css'
 
 function SkillTitle(){
     return(

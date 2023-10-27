@@ -1,4 +1,4 @@
-import './Skills.css'
+import './skills.css'
 
 function Skills(){
     return(
