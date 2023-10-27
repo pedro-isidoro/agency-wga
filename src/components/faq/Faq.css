@@ -1,0 +1,85 @@
+.faq{
+    grid-area: faq;
+    padding: 2rem 0 6rem 0;
+    margin-top: 8rem;
+    min-height: 40rem;
+    width: 100%;
+}
+
+.faq h2, .faq .faq-items h3{
+    color: var(--know-more);
+}
+
+.faq h2{
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 2rem;
+}
+
+.faq .faq-items .faq-item{
+    position: relative;
+    border-bottom: 0.1rem solid var(--text-color);
+    width: 82rem;
+}
+
+.faq .faq-items .faq-item .question{
+    display: flex;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 2rem 0 1rem 0;
+    width: 90%;
+}
+
+.faq .faq-items .faq-item .question::after{
+    content: '';
+    position: absolute;
+    padding: 0.7rem;
+    box-shadow: 2px -2px 0 1px var(--text-color) inset;
+    transform: rotate(-45deg);
+    right: 1rem;
+    transition: 0.4s ease-in-out;
+}
+
+.faq .faq-items .faq-item .question:hover{
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.faq .faq-items .faq-item .answer{
+    display: none;
+    text-align: justify;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--text-color);
+    width: 96%;
+    padding: 0 0 1rem 1.4rem;
+}
+
+.faq .detail{
+    text-align: justify;
+    width: 82rem;
+    padding-top: 4rem;
+    color: var(--text-color);
+    font-size: 1.6rem;
+}
+
+.faq .detail span{
+    padding-right: 0.4rem;
+    color: var(--know-more);
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+/*? FAQ quando Ativos */
+.faq .faq-items .faq-item.active .question{
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.faq .faq-items .faq-item.active .answer{
+    display: block;
+}
+
+.faq .faq-items .faq-item.active .question::after{
+    transform: rotate(-225deg);
+    top: 3rem;
+}

@@ -1,0 +1,27 @@
+.author{
+    grid-area: author;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: var(--dark-background);
+}
+
+.author h4{
+    color: var(--text-color);
+    font-size: 1.07rem;
+}
+
+.author h4:nth-child(1){
+    font-size: 1.5rem;
+}
+
+.author h4:nth-child(2){
+    margin-top: 0.8rem;
+}
+
+.author h4 span, .author h4 a{
+    color: var(--know-more);
+}
+
+.author h4 a:hover{
+    color: var(--whatsapp-background);
+}

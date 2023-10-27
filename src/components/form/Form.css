@@ -1,0 +1,121 @@
+.form{
+    grid-area: form;
+    background-color: var(--dark-background);
+    padding: 3rem 4rem;
+    min-height: 84rem;
+    transition: 0.2s ease-in-out;
+}
+
+.background-form{
+    background-color: var(--form-background);
+    padding: 5rem 2.5rem 2rem 2.5rem;
+    width: 100rem;
+    transition: 0.5s ease-in-out;
+}
+
+.background-form .title-form{
+    font-size: 2rem;
+}
+
+.background-form .title-form h3{
+    font-size: 3.6rem;
+    font-weight: 600;
+}
+
+.background-form .title-form p{
+    font-size: 2rem;
+    font-weight: 400;
+    padding-top: 0.4rem;
+}
+
+.formulary{
+    padding-top: 4rem;
+}
+
+
+.formulary .item-formulary{
+    width: 100%;
+}
+
+.formulary .item-formulary:nth-child(n+2):nth-child(-n+10){
+    padding-top: 1rem;
+}
+
+.formulary .item-formulary label{
+    display: flex;
+    gap: 0.4rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 0 0 0.8rem 0.2rem;
+}
+
+.formulary .item-formulary label span{
+    color: var(--span-text-color);
+    font-weight: 500;
+}
+
+.formulary .item-formulary input{
+    padding: 0 1rem;
+    height: 3.4rem;
+    border-radius: 0.3rem;
+}
+
+.formulary .item-formulary textarea{
+    height: 5rem;
+    border-radius: 0.3rem;
+    padding: 0 1rem;
+    height: 6rem;
+    resize: none;
+}
+
+.formulary .item-formulary input:focus, .formulary .item-formulary textarea:focus{
+    background: var(--focus-background);
+}
+
+.register{
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.register button{
+    font-size: 2rem;
+    width: 100%;
+    padding: 1.6rem 0;
+    border-radius: 0.3rem;
+    background-color: var(--know-more);
+    color: var(--text-color);
+}
+
+.register button:hover{
+    cursor: pointer;
+}
+
+.footer-form{
+    align-self: flex-start;
+    font-weight: 600;
+}
+
+/*? Quando o formulário é eviado */
+.formSend{
+    height: 70vh;
+    border-radius: 6rem;
+}
+
+.formSend .title-form, .formSend form, .formSend .footer-form{
+    display: none;
+}
+
+.div-form-send{
+    height: 100%;
+    display: none;
+}
+
+.div-form-send h3{
+    font-size: 3.5rem;
+    height: 10rem;
+}
+
+.div-form-send p{
+    font-size: 2rem;
+    text-align: center;
+}

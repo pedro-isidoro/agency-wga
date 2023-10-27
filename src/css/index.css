@@ -1,0 +1,65 @@
+html{
+    font-size: 62.5%;
+}
+
+/*? Flex-Column  */
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+/*? Align-item-center  */
+.align-items-center{
+    align-items: center;
+}
+
+/*? Justify-content-center */
+.justify-content-center{
+    justify-content: center;
+}
+
+h2, h3, p{
+    font-weight: 500;
+}
+
+/*? Buttom */
+.btn-know-more{
+    font-size: 2.2rem;
+    font-weight: 700;
+    width: 100%;
+    padding: 0.8rem 0;
+    margin-top: 2rem;
+
+    border-radius: 1rem;
+    text-align: center;
+    background-color: var(--know-more);
+    color: var(--dark-background);
+    box-shadow: 0px 2px 10px 2px var(--dark-know-more);
+    transition: 0.3s ease-in-out;
+}
+
+.btn-know-more:hover{
+    color: var(--text-color);
+    background-color: var(--dark-know-more);
+    font-weight: normal;
+    box-shadow: none;
+}
+
+/*? Main */
+.panel{
+    display: grid;
+    grid-template-areas: "about"
+                         "skill-title"
+                         "skills"
+                         "services"
+                         "form"
+                         "faq"
+                         "author";
+    font-size: 1.6rem;
+    font-family: 'roboto', sans-serif;
+    font-weight: 400;
+    width: 100%;
+    background-color: var(--dark-background);
+    opacity: 1;
+    padding-top: 1.5rem;
+}

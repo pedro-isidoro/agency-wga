@@ -1,0 +1,45 @@
+.about{
+    grid-area:  about;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 54rem;
+    padding: 0 8rem;
+}
+
+.about .item{
+    align-items: flex-end;
+    width: 50%;
+    height: 100%;
+    padding: 0 2rem 0 12rem;
+}
+
+.about .item h3{
+    font-weight: 700;
+    font-size: 3.6rem;
+    color: var(--text-color);
+}
+
+.about .item p{
+    font-size: 1.7rem;
+    text-align: justify;
+    margin: 1rem 0 3rem 0;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.about .item h4{
+    font-size: 1.7rem;
+    margin-top: 3rem;
+    text-align: justify;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.about .image{
+    width: 50%;
+}
+
+.about .image img{
+    width: 100%;
+    border-radius: 2rem;
+}

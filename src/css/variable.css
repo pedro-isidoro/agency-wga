@@ -1,0 +1,19 @@
+:root{
+    --max-width-size: 1920px;
+
+    /* --know-more: rgb(249, 145, 11); */
+    /* --dark-know-more: rgba(249, 146, 11, 0.757); */
+    --know-more: rgb(48, 208, 223);
+    --dark-know-more: rgba(48, 208, 223, 0.757);
+
+    --dark-background: rgb(1, 1, 0);
+    --form-background: rgb(226, 226, 226);
+    /* --focus-background: rgba(249, 146, 11, 0.608); */
+    --focus-background: rgba(48, 208, 223, 0.608);
+    --whatsapp-background: rgb(37, 211, 102);
+
+    --right-border: rgb(0, 255, 94);
+    --text-color: rgb(255, 255, 255);
+    --error-text-color: rgb(255, 59, 37);
+    --span-text-color: rgb(255, 25, 0);
+}

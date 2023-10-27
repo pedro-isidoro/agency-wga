@@ -1,0 +1,44 @@
+.services{
+    grid-area:  services;
+    text-align: center;
+    height: 40rem;
+    padding-top: 1rem;
+
+    background-color: var(--know-more);
+}
+
+.services .question h2{
+    font-size: 3.4rem;
+    font-weight: 700;
+}
+
+.reasons{
+    display: flex;
+}
+
+.reasons .service-1, .reasons .service-2, .reasons .service-3{
+    padding: 0 2rem;
+    margin: 0 2rem;
+    width: 25%;
+    height: 28rem;
+    display: flex;
+    position: relative;
+}
+
+.service-info{
+    align-items: flex-start;
+}
+
+.reasons .service-1 h3, .reasons .service-2 h3, .reasons .service-3 h3{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.reasons .service-1 p, .reasons .service-2 p, .reasons .service-3 p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: left;
+    line-height: 25px;
+    margin-top: 1rem;
+    color: var(--dark-background);
+}

@@ -1,0 +1,53 @@
+.skills{
+    grid-area: skills;
+    display: grid;
+    grid: "skill-1 skill-2 skill-3 skill-4";
+    place-items: center;
+    min-height: 34vh;
+}
+
+.skill-1{
+    grid-area: skill-1;
+}
+
+.skill-2{
+    grid-area: skill-2;
+}
+
+.skill-3{
+    grid-area: skill-3;
+}
+
+.skill-4{
+    grid-area: skill-4;
+}
+
+.skill-1, .skill-2, .skill-3{
+    margin-right: -14rem;
+}
+
+.skill-1, .skill-2, .skill-3, .skill-4{
+    position: relative;
+    justify-content: start;
+    
+    height: 30rem;
+    width: 34rem;
+    padding: 0 2rem;
+}
+
+.skill-1 h3, .skill-2 h3, .skill-3 h3, .skill-4 h3{
+    display: flex;
+    position: relative;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    color: var(--know-more);
+}
+
+.skill-1 p, .skill-2 p, .skill-3 p, .skill-4 p{
+    font-size: 1.5rem;
+    text-align: justify;
+    font-weight: 400;
+    margin-top: 0.4rem;
+    color: var(--text-color);
+}

@@ -1,0 +1,46 @@
+.footer{
+    grid-area:  footer;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 10rem;
+    height: 10rem;
+    background-color: var(--know-more);
+}
+
+.footer .address{
+    align-items: flex-start;
+    width: 50%;
+}
+
+.footer .address h4{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.footer .address p{
+    font-size: 1.6rem;
+    padding-top: 0.2rem;
+}
+
+.footer .address a{
+    font-size: 1.6rem;
+    padding-top: 0.6rem;
+}
+
+.footer .address a:hover{
+    color: var(--text-color);
+}
+
+/* social */
+.footer .social{
+    align-items: flex-end;
+    width: 50%;
+}
+
+.footer .social a, .footer .email{
+    font-size: 1.6rem;
+}
+
+.footer .social a{
+    padding-top: 0.6rem;
+}
