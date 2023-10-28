@@ -671,10 +671,6 @@
         text-align: justify;
     }
 
-    .form{
-        padding: 0;
-    }
-
     .background-form{
         padding: 2rem 2.5rem;
         width: 74rem;
@@ -1146,10 +1142,6 @@
         font-size: 1.8rem;
     }
 
-    .form{
-        padding: 0;
-    }
-
     .background-form{
         padding: 2rem 1rem;
         width: 92%;
@@ -1405,6 +1397,10 @@
 
     .hero .text{
         margin-top: 52rem;
+    }
+
+    .form{
+        padding: 2rem 0.2rem 1rem 0.2rem;
     }
 
     .formulary .item-formulary:nth-child(7) label{
@@ -1899,7 +1895,7 @@
     }
 
     .form{
-        padding: 1rem 0.2rem;
+        padding: 2rem 0.2rem 1rem 0.2rem;
     }
 
     .formSend{
@@ -2068,6 +2064,14 @@
 
     .hero .text{
         margin-top: 44rem;
+    }
+
+    .background-form .title-form h3{
+        font-size: 2.2rem;
+    }
+    
+    .background-form .title-form p{
+        font-size: 1.6rem;
     }
 
     .formulary .item-formulary:nth-child(n+1):nth-child(-n+5) label{
