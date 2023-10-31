@@ -676,14 +676,6 @@
         width: 74rem;
     }
 
-    .formulary .item-formulary:nth-child(7) label{
-        width: 50%;
-    }
-
-    .formulary .item-formulary:nth-child(8) label{
-        width: 70%;
-    }
-
     .register{
         margin: 3rem 0;
     }
@@ -777,6 +769,10 @@
     .skill-3, .skill-4{
         margin-top: 4rem;
     }
+
+    .formulary .item-formulary:nth-child(n+1):nth-child(-n+5) label{
+        width: 25%;
+    }
 }
 
 @media(max-width: 801px){
@@ -842,14 +838,6 @@
     .background-form{
         padding: 2rem 2.5rem;
         width: 70rem;
-    }
-
-    .formulary .item-formulary:nth-child(7) label{
-        width: 60%;
-    }
-
-    .formulary .item-formulary:nth-child(8) label{
-        width: 75%;
     }
 
     .footer{
@@ -919,14 +907,6 @@
         font-size: 1.6rem;
     }
 
-    .formulary .item-formulary:nth-child(7) label{
-        width: 50%;
-    }
-
-    .formulary .item-formulary:nth-child(8) label{
-        width: 80%;
-    }
-
     .footer-form{
         font-size: 1.6rem;
     }
@@ -974,14 +954,6 @@
 
     .background-form{
         width: 64rem;
-    }
-
-    .formulary .item-formulary:nth-child(7) label{
-        width: 50%;
-    }
-
-    .formulary .item-formulary:nth-child(8) label{
-        width: 85%;
     }
 }
 /** 600PX */
@@ -1228,12 +1200,12 @@
         width: 90%;
     }
 
-    .formulary .item-formulary:nth-child(7) label{
-        width: 60%;
+    .form{
+        padding: 2rem 0.2rem 1rem 0.2rem;
     }
 
-    .formulary .item-formulary:nth-child(8) label{
-        width: 90%;
+    .faq .faq-items .faq-item, .faq .detail{
+        width: 58rem;
     }
 }
 
@@ -1266,12 +1238,8 @@
         font-size: 2.8rem;
     }
 
-    .formulary .item-formulary:nth-child(7) label{
-        width: 60%;
-    }
-
-    .formulary .item-formulary:nth-child(8) label{
-        width: 95%;
+    .formulary .item-formulary:nth-child(n+1):nth-child(-n+5) label{
+        width: 34%;
     }
 
     .faq .faq-items .faq-item, .faq .detail{
@@ -1297,14 +1265,6 @@
         
         padding: 1rem 0;
     }
-
-    .formulary .item-formulary:nth-child(7) label{
-        width: 60%;
-    }
-
-    .formulary .item-formulary:nth-child(8) label{
-        width: 100%;
-    }
 }
 /** 500PX */
 @media(max-width: 590px){
@@ -1329,10 +1289,6 @@
 
     .hero .text .item-1 h3, .hero .text .item-1 p{
         font-size: 1.7rem;
-    }
-
-    .formulary .item-formulary:nth-child(7) label{
-        width: 70%;
     }
 }
 
@@ -1370,6 +1326,10 @@
     .hero .text .item-1 h3, .hero .text .item-1 p{
         font-size: 1.7rem;
     }
+
+    .formulary .item-formulary:nth-child(n+1):nth-child(-n+5) label{
+        width: 36%;
+    }
 }
 
 @media(max-width: 550px){
@@ -1380,6 +1340,10 @@
     .hero .text{
         margin-top: 54rem;
     }
+
+    .faq .faq-items .faq-item, .faq .detail{
+        width: 44rem;
+    }
 }
 
 @media(max-width: 530px){
@@ -1389,6 +1353,10 @@
 
     .hero .text{
         margin-top: 53rem;
+    }
+
+    .formulary .item-formulary:nth-child(n+1):nth-child(-n+5) label{
+        width: 38%;
     }
 }
 
@@ -1401,8 +1369,8 @@
         margin-top: 53rem;
     }
 
-    .formulary .item-formulary:nth-child(7) label{
-        width: 80%;
+    .formulary .item-formulary:nth-child(n+1):nth-child(-n+5) label{
+        width: 42%;
     }
 }
 
@@ -1417,14 +1385,6 @@
 
     .form{
         padding: 2rem 0.2rem 1rem 0.2rem;
-    }
-
-    .formulary .item-formulary:nth-child(7) label{
-        width: 90%;
-    }
-
-    .faq .faq-items .faq-item, .faq .detail{
-        width: 44rem;
     }
 }
 /** 400PX */
@@ -1862,10 +1822,6 @@
 
     .hero .text{
         margin-top: 44rem;
-    }
-
-    .formulary .item-formulary:nth-child(7) label{
-        width: 100%;
     }
 
     .formSend{

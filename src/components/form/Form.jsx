@@ -3,10 +3,9 @@ import emailjs from '@emailjs/browser';
 import './form.css'
 
 const handleForm = (data) => {
-    console.log(data) // aqui vai vir todos os inputs do formulário em um objeto
-    //lógica do send mail
+    console.log(data);
 
-    if(data.name === '' || data.email === '' || data.telephone === '' || data.company === '' ||data.instagram === '' || data.opnion === ''){
+    if(data.name === '' || data.email === '' || data.telephone === '' || data.company === '' || data.instagram === '' || data.opnion === ''){
         return;
     };
     // Pegando as informações para colocar no templateEmail
@@ -19,15 +18,12 @@ const handleForm = (data) => {
         message: data.opnion,
     };
 
-    const backgroundForm = document.getElementById("background-form")
-
+    const backgroundForm = document.getElementById("background-form");
     // Para enviar as informações do Form por Email
     emailjs.send("service_znurchl", "template_ptf31ne", templateParams, "eQp_3RbaJKsV8kOFU")
     .then((response) => {
-        console.log("Email Enviado", response.status, response.text);
-        // Defina formSent como true após o envio do formulário para adicionar a class no background
-        // setFormSent(true);
         backgroundForm.classList.toggle('formSend');
+        console.log("Email Enviado", response.status, response.text);
     }, (err) => {
         console.log("Erro:", err);
     });
@@ -53,13 +49,11 @@ function Formulary(){
 
     return(
         <section className="form flex-column align-items-center justify-content-center" id="form">
-            {/* Condicional para adicionar o formSent */}
             <div className="background-form flex-column align-items-center justify-content-center" id="background-form">
                 <div className="title-form flex-column align-items-center justify-content-center">
                     <h3>Solicite a sua proposta</h3>
                     <p>WGA - Marketing Digital</p>
                 </div>
-                {/* Condicional para, se não tiver erros pode enviar o email */}
                 <form onSubmit={handleSubmit(handleForm)}>
                     <div className="formulary">
                         <div className="item-formulary flex-column">
