@@ -3,18 +3,21 @@ import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
 import './form.css'
 
-function sendEmail(nameValue, emailValue, telephoneValue, companyValue, instagramValue, opnionValue){
-    if(nameValue === '' || emailValue === '' || telephoneValue === '' || companyValue === '' ||instagramValue === '' || opnionValue === ''){
+const handleForm = (data) => {
+    console.log(data) // aqui vai vir todos os inputs do formulário em um objeto
+    //lógica do send mail
+
+    if(data.name === '' || data.email === '' || data.telephone === '' || data.company === '' ||data.instagram === '' || data.opnion === ''){
         return;
     };
     // Pegando as informações para colocar no templateEmail
     const templateParams = {
-        from_name: nameValue,
-        company: companyValue,
-        email: emailValue,
-        instagram: instagramValue,
-        telephone: telephoneValue,
-        message: opnionValue,
+        from_name: data.name,
+        email: data.email,
+        telephone: data.telephone,
+        company: data.company,
+        instagram: data.instagram,
+        message: data.opnion,
     };
 
     const backgroundForm = document.getElementById("background-form")
@@ -29,21 +32,9 @@ function sendEmail(nameValue, emailValue, telephoneValue, companyValue, instagra
     }, (err) => {
         console.log("Erro:", err);
     });
-};
+}
 
 function Formulary(){
-    // Armazenando os valores inseridos nos inputs
-    const[nameValue, setName] = useState('');
-    const [emailValue, setEmail] = useState('');
-    const [telephoneValue, setTel] = useState('');
-    const [companyValue, setCompany] = useState('');
-    const [instagramValue, setInsta] = useState('');
-    const [opnionValue, setOpnion] = useState('');
-    // console.log('Nome:', nameValue, 'Email:', emailValue, 'Tel:', telephoneValue, 'Company:', companyValue, 'Insta:', instagramValue, 'Opnion:', opnionValue)
-
-    // Estado para controlar se o formulário foi enviado
-    // const [formSent, setFormSent] = useState(false); 
-
     // Aqui criamos uma forma de useState com o react hook form
     const {
         register, 
@@ -70,12 +61,7 @@ function Formulary(){
                     <p>WGA - Marketing Digital</p>
                 </div>
                 {/* Condicional para, se não tiver erros pode enviar o email */}
-                <form onSubmit={handleSubmit((data) => {
-                    if (Object.keys(errors).length === 0) {
-                        console.log(data);
-                        sendEmail(nameValue, emailValue, telephoneValue, companyValue, instagramValue, opnionValue);
-                    }})}>
-                    {/* {handleSubmit((data) => {console.log(data)})} */}
+                <form onSubmit={handleSubmit(handleForm)}>
                     <div className="formulary">
                         <div className="item-formulary flex-column">
                             <label htmlFor="username">Nome <span>*</span></label>
