@@ -33,14 +33,14 @@ function Formulary(){
         emailjs.send("service_znurchl", "template_ptf31ne", templateParams, "eQp_3RbaJKsV8kOFU")
         .then((response) => {
             console.log("Email Enviado", response.status, response.text);
-            // Defina formSent como true após o envio do formulário
+            // Defina formSent como true após o envio do formulário para adicionar a class no background
             setFormSent(true);
         }, (err) => {
             console.log("Erro:", err);
         });
     };
 
-    // Aqui criamos uma forma de useState
+    // Aqui criamos uma forma de useState com o react hook form
     const {
         register, 
         handleSubmit,
@@ -143,7 +143,7 @@ function Formulary(){
                     <p>Assim que possível, entraremos em contato!!</p>
                 </div>
             </div>
-    </section>  
+        </section>  
     );
 };
 

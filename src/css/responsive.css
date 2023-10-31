@@ -744,7 +744,7 @@
 
 @media(max-width: 835px){
     .hero{
-        height: 34vh;
+        height: 50vh;
     }
 
     .about{
@@ -756,8 +756,12 @@
         height: 22rem;
     }
 
+    .background-form{
+        width: 72rem;
+    }
+
     .faq .faq-items .faq-item, .faq .detail{
-        width: 76rem;
+        width: 72rem;
     }
 }
 
@@ -777,7 +781,7 @@
 
 @media(max-width: 801px){
     .hero{
-        height: 28vh;
+        height: 48vh;
     }
 
     .hero .text h2{
@@ -809,6 +813,14 @@
 
     .skill-3, .skill-4{
         margin-top: 5rem;
+    }
+
+    .background-form{
+        width: 70rem;
+    }
+
+    .faq .faq-items .faq-item, .faq .detail{
+        width: 70rem;
     }
 }
 /** 700PX */
@@ -851,7 +863,7 @@
 
 @media(max-width: 769px){
     .hero{
-        height: 33.5vh;
+        height: 48vh;
     }
 
     .skill-1, .skill-2{
@@ -862,12 +874,20 @@
         margin-top: 6rem;
     }
 
+    .background-form{
+        width: 66rem;
+    }
+
     .formulary .item-formulary:nth-child(n+1):nth-child(-n+5) label{
         width: 28%;
     }
 
     .register a{
         padding: 0.7rem 0;
+    }
+
+    .faq .faq-items .faq-item, .faq .detail{
+        width: 66rem;
     }
 }
 
@@ -919,10 +939,6 @@
 
     .services{
         height: 70rem;
-    }
-
-    .background-form{
-        width: 66rem;
     }
 }
 
@@ -1405,6 +1421,10 @@
 
     .formulary .item-formulary:nth-child(7) label{
         width: 90%;
+    }
+
+    .faq .faq-items .faq-item, .faq .detail{
+        width: 44rem;
     }
 }
 /** 400PX */
