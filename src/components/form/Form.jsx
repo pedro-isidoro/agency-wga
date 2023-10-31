@@ -3,6 +3,34 @@ import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
 import './form.css'
 
+function sendEmail(nameValue, emailValue, telephoneValue, companyValue, instagramValue, opnionValue){
+    if(nameValue === '' || emailValue === '' || telephoneValue === '' || companyValue === '' ||instagramValue === '' || opnionValue === ''){
+        return;
+    };
+    // Pegando as informações para colocar no templateEmail
+    const templateParams = {
+        from_name: nameValue,
+        company: companyValue,
+        email: emailValue,
+        instagram: instagramValue,
+        telephone: telephoneValue,
+        message: opnionValue,
+    };
+
+    const backgroundForm = document.getElementById("background-form")
+
+    // Para enviar as informações do Form por Email
+    emailjs.send("service_znurchl", "template_ptf31ne", templateParams, "eQp_3RbaJKsV8kOFU")
+    .then((response) => {
+        console.log("Email Enviado", response.status, response.text);
+        // Defina formSent como true após o envio do formulário para adicionar a class no background
+        // setFormSent(true);
+        backgroundForm.classList.toggle('formSend');
+    }, (err) => {
+        console.log("Erro:", err);
+    });
+};
+
 function Formulary(){
     // Armazenando os valores inseridos nos inputs
     const[nameValue, setName] = useState('');
@@ -14,31 +42,7 @@ function Formulary(){
     // console.log('Nome:', nameValue, 'Email:', emailValue, 'Tel:', telephoneValue, 'Company:', companyValue, 'Insta:', instagramValue, 'Opnion:', opnionValue)
 
     // Estado para controlar se o formulário foi enviado
-    const [formSent, setFormSent] = useState(false); 
-
-    function sendEmail(){
-        if(nameValue === '' || emailValue === '' || telephoneValue === '' || companyValue === '' ||instagramValue === '' || opnionValue === ''){
-            return;
-        };
-        // Pegando as informações para colocar no templateEmail
-        const templateParams = {
-            from_name: nameValue,
-            company: companyValue,
-            email: emailValue,
-            instagram: instagramValue,
-            telephone: telephoneValue,
-            message: opnionValue,
-        };
-        // Para enviar as informações do Form por Email
-        emailjs.send("service_znurchl", "template_ptf31ne", templateParams, "eQp_3RbaJKsV8kOFU")
-        .then((response) => {
-            console.log("Email Enviado", response.status, response.text);
-            // Defina formSent como true após o envio do formulário para adicionar a class no background
-            setFormSent(true);
-        }, (err) => {
-            console.log("Erro:", err);
-        });
-    };
+    // const [formSent, setFormSent] = useState(false); 
 
     // Aqui criamos uma forma de useState com o react hook form
     const {
@@ -60,7 +64,7 @@ function Formulary(){
     return(
         <section className="form flex-column align-items-center justify-content-center" id="form">
             {/* Condicional para adicionar o formSent */}
-            <div className={`background-form flex-column align-items-center justify-content-center ${formSent ? 'formSend' : ''}`} id="background-form">
+            <div className="background-form flex-column align-items-center justify-content-center" id="background-form">
                 <div className="title-form flex-column align-items-center justify-content-center">
                     <h3>Solicite a sua proposta</h3>
                     <p>WGA - Marketing Digital</p>
@@ -69,9 +73,9 @@ function Formulary(){
                 <form onSubmit={handleSubmit((data) => {
                     if (Object.keys(errors).length === 0) {
                         console.log(data);
-                        sendEmail();
+                        sendEmail(nameValue, emailValue, telephoneValue, companyValue, instagramValue, opnionValue);
                     }})}>
-                    {handleSubmit((data) => {console.log(data)})}
+                    {/* {handleSubmit((data) => {console.log(data)})} */}
                     <div className="formulary">
                         <div className="item-formulary flex-column">
                             <label htmlFor="username">Nome <span>*</span></label>
