@@ -1274,7 +1274,7 @@
 
     .hero::before{
         content: '';
-        background: url(../images/wga-background-logo.png) no-repeat top center;
+        background: url(../images/wga-logo.jpg) no-repeat top center;
         background-size: contain;
         background-color: var(--dark-background);
     }
