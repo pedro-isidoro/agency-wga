@@ -1642,6 +1642,12 @@
         height: 48vh;
     }
 }
+
+@media(max-width: 405px){
+    .hero{
+        height: 30vh;
+    }
+}
 /** 300PX */
 @media(max-width: 394px){
     .hero{
@@ -1771,7 +1777,7 @@
     }
 }
 
-@media(max-width: 371px){
+@media(max-width: 372px){
     .hero{
         height: 25vh;
     }
@@ -1833,7 +1839,7 @@
 
 @media(max-width: 360px){
     .hero{
-        height: 30.4vh;
+        height: 26.4vh;
     }
 
     .formulary .item-formulary input{
