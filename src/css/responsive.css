@@ -1783,7 +1783,7 @@
 
 @media(max-width: 367px){
     .hero{
-        height: 27.5vh;
+        height: 24vh;
     }
 
     .hero .text{
@@ -1833,7 +1833,7 @@
 
 @media(max-width: 360px){
     .hero{
-        height: 25.4vh;
+        height: 26.4vh;
     }
 
     .formulary .item-formulary input{
