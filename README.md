@@ -1,14 +1,16 @@
-# Projeto da Agência WGA
+# Projeto Agência WGA
 
 ## Objetivo
 - Criar uma Landing Page para passar informações ao expectador sobre a agência e seus serviços.
 - Além de um formulário com seu preenchimento enviado por email para a agência em questão.
-    -- E após ser enviado, no lugar do formulário aparecerá a mensagem de sucesso.
+    - E após ser enviado, no lugar do formulário aparecerá a mensagem de sucesso.
 
 ## Tecnologias Utilizadas
+### Linguagens
 - HTML
 - CSS
 - JavaScript
+### Bibliotecas
 - React + Vite
 - React Hook Form
 - EmailJS
