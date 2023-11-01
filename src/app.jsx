@@ -1,13 +1,13 @@
-import Hero from './components/hero/hero'
-import About from './components/about/about'
-import SkillTitle from './components/skill-title/skillTitle'
-import Skills from './components/skills/skills'
-import Services from './components/services/services'
-import Formulary from './components/form/form'
-import Faq from './components/faq/faq'
-import Footer from './components/footer/footer'
-import Author from './components/author/author'
-import WhatsApp from './components/whatsapp/whatsApp'
+import Hero from './components/hero/Hero'
+import About from './components/about/About'
+import SkillTitle from './components/skill-title/SkillTitle'
+import Skills from './components/skills/Skills'
+import Services from './components/services/Services'
+import Formulary from './components/form/Form'
+import Faq from './components/faq/Faq'
+import Footer from './components/footer/Footer'
+import Author from './components/author/Author'
+import WhatsApp from './components/whatsapp/WhatsApp'
 
 function App(){
     return(

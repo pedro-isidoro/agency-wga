@@ -1,5 +1,5 @@
-import React, { Component, useState } from 'react';
-import './faq.css'
+import React, { useState } from 'react';
+import './Faq.css'
 
 function FaqItem(props) {
     const [active, setActive] = useState(false);
