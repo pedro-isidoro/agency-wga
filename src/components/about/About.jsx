@@ -1,10 +1,11 @@
 import './About.css'
+import Image from '/src/images/data-studying.jpeg'
 
 function About(){
     return(
        <section className="about align-items-center justify-content-center" id="about">
             <div className="image">
-                <img src="/src/images/data-studying.jpeg" alt="Imagem de estudos"/>
+                <img src={Image} alt="Imagem de estudos"/>
             </div>
             <div className="item flex-column justify-content-center">
                 <h3>Quem Somos</h3>
