@@ -1388,6 +1388,12 @@
     }
 }
 /** 400PX */
+@media(max-width: 470px){
+    .faq .faq-items .faq-item, .faq .detail{
+        width: 36rem;
+    }
+}
+
 @media(max-width: 426px){
     .hero{
         height: 22.5vh;
@@ -1564,10 +1570,6 @@
     
     .div-form-send p{
         font-size: 2rem;
-    }
-
-    .faq .faq-items .faq-item, .faq .detail{
-        width: 36rem;
     }
 
     .faq .faq-items .faq-item .question{
@@ -1843,7 +1845,7 @@
     }
 }
 
-@media(max-width: 355px){
+@media(max-width: 356px){
     .hero{
         height: 22.5vh;
     }
