@@ -168,6 +168,19 @@
         font-weight: 500;
     }
 
+    .formSend{
+        height: 44vh;
+    }
+
+    #div-form-send h3{
+        font-size: 5rem;
+        height: 16rem;
+    }
+
+    #div-form-send p{
+        font-size: 3.5rem;
+    }
+
     .footer-form{
         font-size: 1.8rem;
     }
@@ -310,6 +323,19 @@
     .formulary .item-formulary textarea{
         height: 9rem;
     }
+
+    .formSend{
+        height: 60vh;
+    }
+
+    #div-form-send h3{
+        font-size: 4rem;
+        height: 14rem;
+    }
+
+    #div-form-send p{
+        font-size: 2.5rem;
+    }
 }
 /** 1400PX */
 @media(max-width: 1441px){
@@ -337,11 +363,19 @@
     .about{
         height: 44rem;
     }
+
+    .formSend{
+        height: 50vh;
+    }
 }
 
 @media(max-width: 1331px){
     .about{
         height: 40rem;
+    }
+
+    .formSend{
+        height: 65vh;
     }
 }
 
@@ -689,9 +723,9 @@
         height: 10rem;
     }
 
-    .formSend{
+    /* .formSend{
         height: 65vh;
-    }
+    } */
 }
 
 @media(max-width: 920px){
@@ -750,6 +784,10 @@
 
     .background-form{
         width: 72rem;
+    }
+
+    .formSend{
+        height: 40vh;
     }
 
     .faq .faq-items .faq-item, .faq .detail{
@@ -813,6 +851,10 @@
 
     .background-form{
         width: 70rem;
+    }
+
+    .formSend{
+        height: 35vh;
     }
 
     .faq .faq-items .faq-item, .faq .detail{
@@ -1560,15 +1602,15 @@
     }
 
     .formSend{
-        height: 40vh;
-        width: 35rem;
+        height: 30vh;
     }
 
-    .div-form-send h3{
+    #div-form-send h3{
         font-size: 3rem;
+        height: 10rem;
     }
     
-    .div-form-send p{
+    #div-form-send p{
         font-size: 2rem;
     }
 
@@ -1611,20 +1653,6 @@
     }
 }
 
-@media(max-width: 415px){
-    .hero{
-        height: 30vh;
-    }
-
-    .hero .text{
-        margin-top: 44rem;
-    }
-
-    .formSend{
-        height: 50vh;
-    }
-}
-
 @media(max-width: 412px){
     .hero{
         height: 24.9vh;
@@ -1639,7 +1667,7 @@
     }
 
     .formSend{
-        height: 48vh;
+        height: 40vh;
     }
 }
 
@@ -1676,7 +1704,7 @@
     }
 
     .formSend{
-        height: 44vh;
+        height: 34vh;
     }
 
     .faq .faq-items .faq-item, .faq .detail{
@@ -1712,10 +1740,6 @@
     .hero .text{
         margin-top: 42.5rem;
     }
-
-    .formSend{
-        height: 50vh;
-    }
 }
 
 @media(max-width: 385px){
@@ -1725,6 +1749,15 @@
 
     .hero .text{
         margin-top: 42rem;
+    }
+
+    #div-form-send h3{
+        font-size: 2.6rem;
+        height: 9rem;
+    }
+    
+    #div-form-send p{
+        font-size: 2rem;
     }
 }
 
@@ -1765,15 +1798,7 @@
     }
 
     .formSend{
-        height: 42vh;
-    }
-
-    .div-form-send h3{
-        font-size: 2.9rem;
-    }
-    
-    .div-form-send p{
-        font-size: 1.9rem;
+        height: 30vh;
     }
 }
 
@@ -1783,7 +1808,7 @@
     }
 
     .formSend{
-        height: 46vh;
+        height: 34vh;
     }
 }
 
@@ -1810,16 +1835,7 @@
     }
 
     .formSend{
-        height: 42vh;
-        width: 32rem;
-    }
-
-    .div-form-send h3{
-        font-size: 2.5rem;
-    }
-    
-    .div-form-send p{
-        font-size: 1.5rem;
+        height: 32vh;
     }
 }
 
@@ -1830,10 +1846,6 @@
 
     .hero .text{
         margin-top: 44rem;
-    }
-
-    .formSend{
-        height: 44vh;
     }
 }
 
@@ -1847,7 +1859,7 @@
     }
 
     .formSend{
-        height: 48vh;
+        height: 34vh;
     }
 }
 
@@ -1880,11 +1892,6 @@
 
     .form{
         padding: 2rem 0.2rem 1rem 0.2rem;
-    }
-
-    .formSend{
-        height: 45vh;
-        width: 30rem;
     }
 }
 
@@ -1935,6 +1942,19 @@
 
     .formulary .item-formulary:nth-child(n+1):nth-child(-n+5) label{
         width: 48%;
+    }
+
+    .formSend{
+        height: 36vh;
+    }
+
+    #div-form-send h3{
+        font-size: 2.4rem;
+        height: 6rem;
+    }
+    
+    #div-form-send p{
+        font-size: 1.6rem;
     }
 }
 
@@ -1997,10 +2017,6 @@
     .background-form{
         width: 95%;
     }
-
-    .formSend{
-        height: 45vh;
-    }
 }
 
 @media(max-width: 326px){
@@ -2062,7 +2078,12 @@
         width: 50%;
     }
 
-    .div-form-send h3{
-        font-size: 2.3rem;
+    #div-form-send h3{
+        font-size: 2.2rem;
+        height: 6rem;
+    }
+    
+    #div-form-send p{
+        font-size: 1.6rem;
     }
 }

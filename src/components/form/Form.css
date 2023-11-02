@@ -2,7 +2,7 @@
     grid-area: form;
     background-color: var(--dark-background);
     padding: 3rem 4rem;
-    min-height: 56rem;
+    min-height: 28rem;
     transition: 0.2s ease-in-out;
 }
 
