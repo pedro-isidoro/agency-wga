@@ -353,6 +353,10 @@
     .hero{
         height: 91vh;
     }
+
+    .formSend{
+        height: 50vh;
+    }
 }
 /** 1300PX */
 @media(max-width: 1373px){
@@ -363,19 +367,11 @@
     .about{
         height: 44rem;
     }
-
-    .formSend{
-        height: 50vh;
-    }
 }
 
 @media(max-width: 1331px){
     .about{
         height: 40rem;
-    }
-
-    .formSend{
-        height: 65vh;
     }
 }
 
@@ -591,6 +587,10 @@
     .background-form{
         width: 88rem;
     }
+
+    .background-form.formSend{
+        width: 70rem;
+    }
     
 }
 
@@ -722,10 +722,6 @@
         padding: 2rem 4rem;
         height: 10rem;
     }
-
-    /* .formSend{
-        height: 65vh;
-    } */
 }
 
 @media(max-width: 920px){
@@ -784,10 +780,6 @@
 
     .background-form{
         width: 72rem;
-    }
-
-    .formSend{
-        height: 40vh;
     }
 
     .faq .faq-items .faq-item, .faq .detail{
@@ -853,7 +845,8 @@
         width: 70rem;
     }
 
-    .formSend{
+    .background-form.formSend{
+        width: 60rem;
         height: 35vh;
     }
 
@@ -961,6 +954,10 @@
 
     .services{
         height: 70rem;
+    }
+
+    .background-form.formSend{
+        width: 55rem;
     }
 }
 
@@ -1203,6 +1200,10 @@
         padding: 0.8rem 0;
     }
 
+    .faq .faq-items .faq-item, .faq .detail{
+        width: 60rem;
+    }
+
     .footer-form{
         font-size: 1.5rem;
     }
@@ -1304,8 +1305,21 @@
 
     .btn-form .btn-know-more{
         width: 75%;
-        
         padding: 1rem 0;
+    }
+
+    .background-form.formSend{
+        width: 50rem;
+        height: 30rem;
+    }
+
+    #div-form-send h3{
+        font-size: 3.4rem;
+        height: 8rem;
+    }
+    
+    #div-form-send p{
+        font-size: 2rem;
     }
 }
 /** 500PX */
@@ -1349,6 +1363,10 @@
 
     .hero .text .item-1 h3, .hero .text .item-1 p{
         font-size: 1.7rem;
+    }
+
+    .background-form.formSend{
+        width: 45rem;
     }
 }
 
@@ -1601,8 +1619,9 @@
         font-size: 0.9rem;
     }
 
-    .formSend{
-        height: 30vh;
+    .background-form.formSend{
+        width: 35rem;
+        height: 26rem;
     }
 
     #div-form-send h3{
@@ -1665,10 +1684,6 @@
     .about{
         height: 74rem;
     }
-
-    .formSend{
-        height: 40vh;
-    }
 }
 
 @media(max-width: 405px){
@@ -1701,10 +1716,6 @@
     .register a{
         padding: 0.6rem 0;
         font-weight: 400;
-    }
-
-    .formSend{
-        height: 34vh;
     }
 
     .faq .faq-items .faq-item, .faq .detail{
@@ -1751,9 +1762,14 @@
         margin-top: 42rem;
     }
 
+    .background-form.formSend{
+        width: 30rem;
+        height: 24rem;
+    }
+
     #div-form-send h3{
         font-size: 2.6rem;
-        height: 9rem;
+        height: 8rem;
     }
     
     #div-form-send p{
@@ -1796,19 +1812,11 @@
     .services{
         height: 70rem;
     }
-
-    .formSend{
-        height: 30vh;
-    }
 }
 
 @media(max-width: 372px){
     .hero{
         height: 25vh;
-    }
-
-    .formSend{
-        height: 34vh;
     }
 }
 
@@ -1833,10 +1841,6 @@
     .hero .text .item-1 p{
         font-size: 1.5rem;
     }
-
-    .formSend{
-        height: 32vh;
-    }
 }
 
 @media(max-width: 362px){
@@ -1856,10 +1860,6 @@
 
     .formulary .item-formulary input{
         height: 3rem;
-    }
-
-    .formSend{
-        height: 34vh;
     }
 }
 
@@ -1929,6 +1929,16 @@
     .hero .text{
         margin-top: 44rem;
     }
+
+    .background-form.formSend{
+        width: 28rem;
+        height: 24rem;
+    }
+
+    #div-form-send h3{
+        font-size: 2.5rem;
+        height: 6rem;
+    }
 }
 
 @media(max-width: 332px){
@@ -1942,10 +1952,6 @@
 
     .formulary .item-formulary:nth-child(n+1):nth-child(-n+5) label{
         width: 48%;
-    }
-
-    .formSend{
-        height: 36vh;
     }
 
     #div-form-send h3{
@@ -2014,8 +2020,18 @@
         font-size: 1.4rem;
     }
 
-    .background-form{
-        width: 95%;
+    .background-form.formSend{
+        width: 26rem;
+        height: 22rem;
+    }
+
+    #div-form-send h3{
+        font-size: 2.2rem;
+        height: 6rem;
+    }
+    
+    #div-form-send p{
+        font-size: 1.8rem;
     }
 }
 

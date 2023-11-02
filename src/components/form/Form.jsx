@@ -49,7 +49,7 @@ function Formulary(){
 
     return(
         <section className="form flex-column align-items-center justify-content-center" id="form">
-            <div className="background-form flex-column align-items-center justify-content-center " id="background-form">
+            <div className="background-form flex-column align-items-center justify-content-center" id="background-form">
                 <div className="title-form flex-column align-items-center justify-content-center">
                     <h3>Solicite a sua proposta</h3>
                     <p>WGA - Marketing Digital</p>
