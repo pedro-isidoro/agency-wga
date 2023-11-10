@@ -69,7 +69,7 @@
 }
 
 .formulary .item-formulary input:focus, .formulary .item-formulary textarea:focus{
-    background: var(--focus-background);
+    border: none;
 }
 
 .register{

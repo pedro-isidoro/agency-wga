@@ -17,7 +17,7 @@
     font-size: 2rem;
 }
 
-.footer .address p{
+.footer .address p, .footer .address .email{
     font-size: 1.6rem;
     padding-top: 0.2rem;
 }
@@ -37,8 +37,12 @@
     width: 50%;
 }
 
-.footer .social a, .footer .email{
+.footer .social a{
     font-size: 1.6rem;
+}
+
+.footer .social .cnpj{
+    font-size: 1.4rem;
 }
 
 .footer .social a{
