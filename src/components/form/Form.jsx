@@ -20,7 +20,7 @@ const handleForm = (data) => {
 
     const backgroundForm = document.getElementById("background-form");
     // Para enviar as informações do Form por Email
-    emailjs.send("service_geo2u2d", "template_kxg9vwp", templateParams, "wLDRCU33fDt9vcRw")
+    emailjs.send("service_geo2u2d", "template_kxg9vwp", templateParams, "wLDRCU33PfDt9vcRw")
     .then((response) => {
         backgroundForm.classList.toggle('formSend');
         console.log("Email Enviado", response.status, response.text);
