@@ -27,7 +27,7 @@
     padding-top: 0.6rem;
 }
 
-.footer .address a:hover{
+.footer .address a:hover, .footer .social a:hover{
     color: var(--text-color);
 }
 

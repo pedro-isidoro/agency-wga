@@ -54,7 +54,7 @@ function Faq(){
                     FAQresposta="Recomenda-se procurar profissionais com experiência comprovada e referências sólidas. Agências de marketing digital e redes profissionais podem ser ótimos lugares para encontrar especialistas qualificados. Certifique-se de analisar portfólios e realizar entrevistas antes de tomar uma decisão." 
                 />
             </ul>
-            <p className="detail"><span>Destaque Especial:</span>Como ex-funcionário do Google, trago uma compreensão aprofundada das práticas recomendadas e estratégias internas da plataforma, proporcionando um diferencial valioso para otimizar suas campanhas no Google Ads. Isso se traduz em resultados mais impactantes e eficazes para sua presença online.</p>
+            {/* <p className="detail"><span>Destaque Especial:</span>Como ex-funcionário do Google, trago uma compreensão aprofundada das práticas recomendadas e estratégias internas da plataforma, proporcionando um diferencial valioso para otimizar suas campanhas no Google Ads. Isso se traduz em resultados mais impactantes e eficazes para sua presença online.</p> */}
         </section>
     );
 };

@@ -1,0 +1,45 @@
+.panel-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 0 2rem 0;
+}
+
+.panel-2 h2{
+    color: var(--know-more);
+    font-size: 2.2rem;
+    font-weight: 800;
+    padding-bottom: 2rem;
+}
+
+.panel-2 p{
+    color: var(--text-color);
+    font-size: 1.5rem;
+    text-align: justify;
+    font-weight: 500;
+    padding: 2rem 0 1rem 0;
+    width: 80%;
+}
+
+.panel-2 a{
+    color: var(--dark-background);
+    background-color: var(--know-more);
+    font-size: 1.9rem;
+    text-align: center;
+    font-weight: 500;
+    padding: 1rem 0 ;
+    width: 14%;
+    border-radius: 2rem;
+}
+
+.panel-2 a:hover{
+    color: var(--text-color);
+    transform: scale(1.06);
+}
+
+.panel-2 span{
+    color: var(--know-more);
+    font-size: 1.5rem;
+    font-weight: 500;
+}

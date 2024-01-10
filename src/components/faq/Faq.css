@@ -55,7 +55,7 @@
     padding: 0 0 1rem 1.4rem;
 }
 
-.faq .detail{
+/* .faq .detail{
     text-align: justify;
     width: 82rem;
     padding-top: 4rem;
@@ -68,7 +68,7 @@
     color: var(--know-more);
     font-size: 1.7rem;
     font-weight: 400;
-}
+} */
 /*? FAQ quando Ativos */
 .faq .faq-items .faq-item.active .question{
     font-weight: 700;

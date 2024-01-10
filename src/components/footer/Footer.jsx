@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Footer.css'
 
 function Footer(){
@@ -6,10 +7,11 @@ function Footer(){
         <div className="address">
             <h4>Agência WGA</h4>
             <p>Serviços Online</p>
-            <p className="email">wga.agencia@gmail.com</p>
+            <p className="email">contato@wga-mkt.com.br</p>
+            <p className='email'>Tel: +55 11 93741-2887</p>
         </div>
         <div className="social flex-column justify-content-center">
-            <a href="/">Políticas de Privacidade</a>
+            <a><Link to="/politica-de-privacidade" className='link'>Políticas de Privacidade</Link></a>
             <p className='cnpj'>CNPJ: 50.796.772/0001-50</p>
         </div>
     </footer>
