@@ -1,36 +1,41 @@
 import { useForm } from 'react-hook-form';
+import { useNavigate } from 'react-router-dom'
 import emailjs from '@emailjs/browser';
 import './Form.css'
-
-const handleForm = (data) => {
-    // console.log(data);
-
-    if(data.name === '' || data.email === '' || data.telephone === '' || data.company === '' || data.instagram === '' || data.opnion === ''){
-        return;
-    };
-    // Pegando as informações para colocar no templateEmail
-    const templateParams = {
-        from_name: data.name,
-        email: data.email,
-        telephone: data.telephone,
-        company: data.company,
-        instagram: data.instagram,
-        message: data.opnion,
-    };
-
-    const backgroundForm = document.getElementById("background-form");
-    // Para enviar as informações do Form por Email
-    emailjs.send("service_geo2u2d", "template_kxg9vwp", templateParams, "wLDRCU33PfDt9vcRw")
-    .then((response) => {
-        // backgroundForm.classList.toggle('formSend');
-        console.log("Email Enviado", response.status, response.text);
-        return window.location.href = "/formulario-enviado";
-    }, (err) => {
-        console.log("Erro:", err);
-    });
-}
+// import { useNavigate } from 'react-router-dom';
 
 function Formulary(){
+    const navigate = useNavigate();
+    const handleForm = (data) => {
+        // console.log(data);
+    
+        if(data.name === '' || data.email === '' || data.telephone === '' || data.company === '' || data.instagram === '' || data.opnion === ''){
+            return;
+        };
+        // Pegando as informações para colocar no templateEmail
+        const templateParams = {
+            from_name: data.name,
+            email: data.email,
+            telephone: data.telephone,
+            company: data.company,
+            instagram: data.instagram,
+            message: data.opnion,
+        };
+    
+        // const backgroundForm = document.getElementById("background-form");
+        // Para enviar as informações do Form por Email
+        //Para teste emailjs.send("service_znurchl", "template_ptf31ne", templateParams, "eQp_3RbaJKsV8kOFU")
+        emailjs.send("service_geo2u2d", "template_kxg9vwp", templateParams, "wLDRCU33PfDt9vcRw")
+        .then((response) => {
+            // backgroundForm.classList.toggle('formSend');
+            console.log("Email Enviado", response.status, response.text);
+            // return window.location.href = "/formulario-enviado";
+        }, (err) => {
+            console.log("Erro:", err);
+        });
+        return navigate("/formulario-enviado")
+    }
+
     // Aqui criamos uma forma de useState com o react hook form
     const {
         register, 
