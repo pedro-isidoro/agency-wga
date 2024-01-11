@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import '../src/css/privacy-site.css'
+import './css/privacy-site.css'
 
 function PrivacySite(){
     return(

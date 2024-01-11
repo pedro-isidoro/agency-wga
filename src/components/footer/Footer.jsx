@@ -12,7 +12,7 @@ function Footer(){
         </div>
         <div className="social flex-column justify-content-center">
             <a><Link to="/politica-de-privacidade" className='link'>Políticas de Privacidade</Link></a>
-            <p className='cnpj'>CNPJ: 50.796.772/0001-50</p>
+            <p className='cnpj'>CNPJ: 48.388.056/0001-91</p>
         </div>
     </footer>
     );
