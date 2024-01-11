@@ -14,6 +14,7 @@ const router = createBrowserRouter([
   {
       path: "/",
       element: < Outlet/>,
+      errorElement: < FormSend />,
       children: [
         {
           path: "/",
@@ -21,11 +22,11 @@ const router = createBrowserRouter([
         },
         {
           path: "politica-de-privacidade",
-          element: <PrivacySite />,
+          element: < PrivacySite />,
         },
         {
           path: "formulario-enviado",
-          element: <FormSend />,
+          element: < FormSend />,
         }
       ]
   },
