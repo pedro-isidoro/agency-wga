@@ -24,7 +24,7 @@ const handleForm = (data) => {
     .then((response) => {
         // backgroundForm.classList.toggle('formSend');
         console.log("Email Enviado", response.status, response.text);
-        window.location.href = "/formulario-enviado";
+        return window.location.href = "/formulario-enviado";
     }, (err) => {
         console.log("Erro:", err);
     });
