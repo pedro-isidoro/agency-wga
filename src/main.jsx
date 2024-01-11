@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider,Outlet } from 'react-router-dom'
 import App from './app.jsx';
 import PrivacySite from './privacy-site.jsx';
+import FormSend from './formSend.jsx';
 
 import './css/variable.css';
 import './css/reset.css';
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
         {
           path: "politica-de-privacidade",
           element: <PrivacySite />,
+        },
+        {
+          path: "formulario-enviado",
+          element: <FormSend />,
         }
       ]
   },

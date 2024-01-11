@@ -73,3 +73,14 @@ h2, h3, p{
     opacity: 1;
     padding-top: 1.5rem;
 }
+
+.panel-3{
+    font-size: 1.6rem;
+    font-family: 'roboto', sans-serif;
+    font-weight: 400;
+    height: 100vh;
+    width: 100%;
+    opacity: 1;
+    padding-top: 1.5rem;
+    background-color: var(--dark-background);
+}

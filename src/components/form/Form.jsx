@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import './Form.css'
 
 const handleForm = (data) => {
-    console.log(data);
+    // console.log(data);
 
     if(data.name === '' || data.email === '' || data.telephone === '' || data.company === '' || data.instagram === '' || data.opnion === ''){
         return;
@@ -22,8 +22,9 @@ const handleForm = (data) => {
     // Para enviar as informações do Form por Email
     emailjs.send("service_geo2u2d", "template_kxg9vwp", templateParams, "wLDRCU33PfDt9vcRw")
     .then((response) => {
-        backgroundForm.classList.toggle('formSend');
+        // backgroundForm.classList.toggle('formSend');
         console.log("Email Enviado", response.status, response.text);
+        window.location.href = "/formulario-enviado";
     }, (err) => {
         console.log("Erro:", err);
     });
@@ -86,11 +87,11 @@ function Formulary(){
 
                         <div className="item-formulary flex-column">
                             <label htmlFor="telephone">Telefone<span>*</span></label>
-                            <input type="tel" name="telephone-number" id="telephone" placeholder="Digite o seu número (+55) 9xxxx-xxxx" autoComplete="on" 
+                            <input type="tel" name="telephone-number" id="telephone" placeholder="Digite o seu número +55 9xxxxxxxx" autoComplete="on" 
                             {...register("telephone", 
                                 {required: 'Este campo é Obrigatório*',
                                 pattern: {
-                                    value: /^\+\d{1,3}-\d{3,14}$/, 
+                                    value: /^\d{2}\s?9?\d{8}$/, 
                                     message: 'Insira um número válido. Ex: +11-970601261!'}
                                 })
                             }/>
@@ -121,10 +122,10 @@ function Formulary(){
                 <div className="footer-form">
                     <p>Prometemos não utilizar suas informações de contato para enviar qualquer tipo de SPAM.</p>
                 </div>
-                <div className="flex-column align-items-center justify-content-center" id="div-form-send">
+                {/* <div className="flex-column align-items-center justify-content-center" id="div-form-send">
                     <h3>Formulário Enviado ✅</h3>
                     <p>Assim que possível, entraremos em contato!!</p>
-                </div>
+                </div> */}
             </div>
         </section>  
     );

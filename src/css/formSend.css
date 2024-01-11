@@ -1,0 +1,53 @@
+.panel-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 4rem 0;
+}
+
+.panel-3 h2, .panel-3 h3{
+    color: var(--know-more);
+    font-size: 2.2rem;
+    font-weight: 800;
+    padding-bottom: 2rem;
+}
+
+.panel-3 h3{
+    padding: 2rem 0 2rem 0;
+}
+
+.panel-3 p{
+    color: var(--text-color);
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+    padding: 2rem 0 2rem 0;
+    width: 80%;
+}
+
+.panel-3 a{
+    color: var(--dark-background);
+    font-size: 1.9rem;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 4rem;
+    width: 80%;
+    border-radius: 2rem;
+}
+
+.panel-3 a .link{
+    background-color: var(--know-more);
+    padding: 1rem 2rem;
+}
+
+.panel-3 a:hover, .panel-3 a .link:hover{
+    color: var(--text-color);
+    transform: scale(1.06);
+}
+
+.panel-3 span{
+    color: var(--know-more);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
