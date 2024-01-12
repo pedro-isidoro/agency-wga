@@ -1690,6 +1690,20 @@
     .hero{
         height: 30vh;
     }
+
+    .panel-3 h2, .panel-3 h3{
+        font-size: 2.4rem;
+    }
+
+    .panel-3 h2{
+        text-align: center;
+        width: 100%;
+    }
+
+    .panel-3 p{
+        width: 100%;
+        font-size: 1.6rem;
+    }
 }
 /** 300PX */
 @media(max-width: 394px){
